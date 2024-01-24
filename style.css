@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    font-family: TT Lakes;
+    color: #1B1C21;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.nav {
+    padding: 18px 24px 32px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100vh;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn {
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 16px;
+}
+
+.nav-search {
+    margin-left: auto;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 50px;
+}
+
+.link {
+    position: relative;
+    display: block;
+    color: #1B1C21;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.link:hover,
+.link__active,
+.switcher-link:hover,
+.switcher-link.switcher-link__active{
+    color: #7E7E82;
+}
+
+.link__active::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: #41F6D7;
+    left: -24px;
+}
+
+
+.footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links {
+    display: flex;
+   
+}
+
+.footer-links li+li {
+    margin-left: 16px;
+}
+
+.address {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.address-email {
+    font-style: normal;
+    color: #1B1C21;
+}
+
+.address-num {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.6px ;
+    color: #1B1C21;
+}
+
+.language-switcher {
+    margin-top: 40px;
+    display: flex;
+    gap: 7px;
+}
+
+.switcher-link {
+    color: #1B1C21;
+    transition: 0.15s;
+}
+
